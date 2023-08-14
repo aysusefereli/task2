@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 400px;
+
+    #red.box {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+        margin-right: 18px;
+    }
+    #blue.box {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+    }
+    #green.box {
+        background-color: green;
+        height: 100px;
+        width: 100px;
+        margin-left: 18px;
+    }
+    @keyframes firstanimation {
+        0% {transform: translate(0, 0);}
+        25% {transform: translate(0, 100%);}
+        50% {transform: translate(100%, 100%);}
+        75% {transform: translate(100%, 0);}
+        100% {transform: translate(0, 0);}
+    }
+    @keyframes secondanimation { 
+        0%   {transform: scale(1)  rotate(0deg);}
+        25%  {transform: scale(2) rotate(120deg);}
+        50%  {transform: scale(.5) rotate(240deg);}
+        100% {transform: scale(1) rotate(360deg);}
+    }
+    @keyframes thirdanimation {
+        0% {background-color: red;}
+        25% {background-color: blue;}
+        50% {background-color: green;}
+        75% {background-color: yellow;}
+        99% {background-color: purple;}
+    }
+   
+}
