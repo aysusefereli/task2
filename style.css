@@ -1,24 +1,23 @@
-.container {
+#container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 400px;
 }
-.container #red.box {
-  background-color: red;
+#container .box {
+  animation-fill-mode: both;
   height: 100px;
   width: 100px;
+}
+#container #red.box {
+  background-color: red;
   margin-right: 18px;
 }
-.container #blue.box {
+#container #blue.box {
   background-color: blue;
-  height: 100px;
-  width: 100px;
 }
-.container #green.box {
+#container #green.box {
   background-color: green;
-  height: 100px;
-  width: 100px;
   margin-left: 18px;
 }
 @keyframes firstanimation {
