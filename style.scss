@@ -29,7 +29,7 @@
         100% {transform: translate(0, 0);}
     }
     @keyframes secondanimation { 
-        0%   {transform: scale(1)  rotate(0deg);}
+        0%   {transform: scale(1) rotate(0deg);}
         25%  {transform: scale(2) rotate(120deg);}
         50%  {transform: scale(.5) rotate(240deg);}
         100% {transform: scale(1) rotate(360deg);}
@@ -41,5 +41,12 @@
         75% {background-color: yellow;}
         99% {background-color: purple;}
     }
-   
+    @keyframes fourthanimation {
+        0% {transform: translate(0, 0); transform: scale(1) rotate(0deg); background-color: red;}
+        25% {transform: translate(0, 100%); transform: scale(2) rotate(120deg); background-color: blue;}
+        50% {transform: translate(100%, 100%); transform: scale(.5) rotate(240deg); background-color: green;}
+        75% {transform: translate(100%, 0); background-color: yellow;}
+        99% {background-color: purple;}
+        100% {transform: translate(0, 0); transform: scale(1) rotate(360deg);}
+    }
 }
